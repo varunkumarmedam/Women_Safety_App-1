@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBF0F4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#77C1FD">
+
+            <ImageView
+                android:id="@+id/backto_mainactivity"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back_arrow"
+                android:layout_marginVertical="25dp"
+                android:layout_marginLeft="10dp"></ImageView>
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:layout_marginTop="-210dp"
+            android:background="#F7F8FA"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/mobile_verification"
+                    android:layout_margin="5dp"></ImageView>
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_below="@id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verify your Number"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_below="@id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please enter your mobile number to receive a verification code"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="20dp"></TextView>
+
+                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_below="@id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"/>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_below="@id/ccp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Mobile Number*"
+                    android:textSize="13dp"
+                    android:textColor="#BCBCBC"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="8dp"></TextView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/phone_number"
+                    android:layout_below="@id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeColor="#77C1FD"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="#77C1FD"
+                    app:hintEnabled="false"
+                    android:layout_marginHorizontal="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="9999999999"
+                        android:imeOptions="actionSend"
+                        android:inputType="phone"
+                        android:textSize="18dp"
+                        android:textColor="#000"></com.google.android.material.textfield.TextInputEditText>
+                    `
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/getOtp_btn"
+                    android:layout_below="@id/phone_number"
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:text="Send OTP"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/button_bg"></Button>
+
+                <TextView
+                    android:layout_below="@id/getOtp_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="One Time Password"
+                    android:textSize="13dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"></TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>
+

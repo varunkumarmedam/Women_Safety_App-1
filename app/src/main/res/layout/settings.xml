@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do you want to update your name?"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="10dp"></TextView>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_below="@id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mounika Ala"
+                android:textSize="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"></TextView>
+
+            <ImageView
+                android:id="@+id/edit_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pencil"
+                android:layout_alignParentRight="true"></ImageView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_below="@id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="please select an option which you want to use when you are in danger..."
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="20dp"></TextView>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout1"
+            android:layout_below="@id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Power Button"
+                android:textSize="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"></TextView>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/power_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="ON"
+                android:textOff="OFF"
+                android:gravity="center"
+                android:checked="true"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"></androidx.appcompat.widget.SwitchCompat>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/relative_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volume Up Button"
+                android:textSize="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"></TextView>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/volume_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="ON"
+                android:textOff="OFF"
+                android:gravity="center"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"></androidx.appcompat.widget.SwitchCompat>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

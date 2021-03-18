@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#77C1FD"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:endIconMode="clear_text"
+        app:endIconTint="#77C1FD"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="User name"
+            android:imeOptions="actionSend"
+            android:inputType="textPersonName"
+            android:textSize="18dp"
+            android:textColor="#000"></com.google.android.material.textfield.TextInputEditText>
+        `
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_below="@id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(Please make sure that it dosen't contains any spelling mistakes)"
+        android:textSize="13dp"
+        android:layout_marginTop="3dp"></TextView>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77C1FD">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/empty_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No contacts selected yet. Add contacts now!"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="invisible"></TextView>
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="call"
+        android:textColor="#fff"
+        android:background="@drawable/button_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"></Button>
+
+    <Button
+        android:id="@+id/message"
+        android:layout_below="@id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textColor="#fff"
+        android:background="@drawable/button_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"></Button>
+
+    <Button
+        android:id="@+id/location"
+        android:layout_below="@id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textColor="#fff"
+        android:background="@drawable/button_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"></Button>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingaction_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="25dp"
+        android:backgroundTint="#fff"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

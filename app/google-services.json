@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "639637922595",
+    "project_id": "safety-app-735af",
+    "storage_bucket": "safety-app-735af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639637922595:android:9fa989562946488bb2e296",
+        "android_client_info": {
+          "package_name": "com.example.safetyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639637922595-ju39lha4nsrv1ntflk12spkpnk509h0v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.safetyapp",
+            "certificate_hash": "12a164235490f5b66a4e6db9ccad4f3d488fb31c"
+          }
+        },
+        {
+          "client_id": "639637922595-n06ptu1sframc5vo57h5jtdm6jbopodk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSBIG4HeOrBJuSyHm24h1sahPXO3UR_W8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639637922595-n06ptu1sframc5vo57h5jtdm6jbopodk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
